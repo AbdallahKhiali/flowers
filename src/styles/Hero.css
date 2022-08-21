@@ -1,0 +1,155 @@
+.hero {
+    position: relative;
+}
+
+
+
+.hero-bg {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+
+}
+
+.hero-container {
+    width: 50%;
+    padding: 64px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.hero-title {
+    font-family: 'VIOLA';
+}
+
+.hero-description {
+    padding: 16px 0;
+    line-height: 24px;
+    font-family: 'Audi Type Extended Bold';
+
+}
+
+
+.hero-button {
+    border: 1px solid #fff;
+    width: fit-content;
+    padding: 16px 32px;
+    /* border-radius: 8px; */
+    font-family: 'Audi Type Extended Bold';
+    cursor: pointer;
+    transition: ease-in .1s;
+}
+
+.hero-button:hover {
+
+    background-color: white;
+    color: black;
+
+
+}
+
+.expo {
+    height: 100vh;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+
+.expo-card-container {
+    height: 75vh;
+    overflow-x: visible;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 125%;
+
+}
+
+.expo-card-left,
+.expo-card-right {
+    display: flex;
+}
+
+.expo-card {
+    object-fit: cover;
+    height: 50vh;
+    margin: 24px;
+    width: 20vw;
+    opacity: .5;
+}
+
+.active-card {
+    object-fit: cover;
+    margin: 0px;
+    position: absolute;
+    height: 100%;
+    width: 30vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 1000;
+
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .hero-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        transform: scale(1);
+    }
+
+    .hero-container {
+        all: unset;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+
+
+    .hero-description {
+        all: unset;
+        width: 100%;
+        text-align: center;
+        padding: .5rem;
+        font-family: 'Audi Type Extended Bold';
+
+    }
+
+
+
+
+    .expo-card-container {
+        width: 100%;
+    }
+
+
+}

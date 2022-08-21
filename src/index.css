@@ -1,0 +1,23 @@
+@import url(./assets/VIOLA/stylesheet.css);
+@import url(./assets/audi/style.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  color: aliceblue;
+  font-family: 'VIOLA';
+  font-family: 'Audi Type Extended Bold';
+  background-color: black;
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+}
